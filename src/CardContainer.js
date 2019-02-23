@@ -13,8 +13,8 @@ class CardContainer extends Component {
       return <article className="individual-card">
         <h3 className="card-name">{codeWar.name}</h3>
           <div className="level-and-category">
-            <p className="card-category">Category: {codeWar.type}</p>
-            <p className="card-level">Level: {codeWar.level}</p>
+            <p className="card-category">Category : {codeWar.type}</p>
+            <p className="card-level">Level : {codeWar.level}</p>
           </div>
           <div className="link">
             <a href={codeWar.replLink} target="_blank" className="repl-link">{codeWar.replLink}</a>
@@ -27,7 +27,7 @@ class CardContainer extends Component {
 
   render() {
     return (
-      <div>
+      <div className="bottom-page">
         <div className="card-container">
           {this.showFilteredCategories()}
         </div>
