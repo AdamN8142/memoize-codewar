@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 @import url('https://fonts.googleapis.com/css?family=Molle:400i');
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy|Molle:400i');
 
 
 .card-container {
@@ -13,18 +14,18 @@
   border:solid black;
   border-radius: 25px;
   margin-bottom: 60px;
-  width: 800px;
+  width: 850px;
   animation: slideInX 3.5s ease 0s 1 normal; 
   animation-fill-mode: forwards;
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx_FVYfREyzYPsYobXZuXpXKIzu08n5owpMeno-LIjtyMcg8cG");
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: .85;
+  opacity: .9;
 }
 
-.individual-card:hover {
+/* .individual-card:hover {
   opacity: 1;
-}
+} */
 
 @keyframes slideInX {
   0% {
@@ -40,7 +41,10 @@
   margin-top: 29px;
   margin-bottom: 25px;
   text-align: center;
-  font-family: 'Indie Flower', cursive;
+  /* font-family: 'Indie Flower', cursive; */
+  font-family: 'Luckiest Guy', cursive;
+  letter-spacing: .05em;
+
 }
 
 .card-prompt {
@@ -61,13 +65,13 @@
 
 .card-category {
   margin-right: 35px;
-  font-size: 35px;
+  font-size: 45px;
   font-family: 'Indie Flower', cursive;
 }
 
 .card-level{
   margin-left: 35px;
-  font-size: 35px;
+  font-size: 45px;
   margin-bottom:20px;
   font-family: 'Indie Flower', cursive;
 
@@ -81,10 +85,58 @@
 .link {
   display: flex;
   justify-content: center;
-
 }
 
 .bottom-page {
   background-image:url("https://wallpapercave.com/wp/gfwPusm.jpg");
-
 }
+
+.card-buttons-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+
+.save-to-storage-btn {
+  height: 100px;
+  width: 180px;
+  border-radius: 50px;
+  background-image:url("https://wallpapercave.com/wp/gfwPusm.jpg");
+  color: white;
+  border:solid 4px white;
+  font-size: 18px;
+}
+
+.see-solution-btn {
+  height: 100px;
+  width: 180px;
+  border-radius: 50px;
+  background-image:url("https://wallpapercave.com/wp/gfwPusm.jpg");
+  color:white;
+  border:solid 4px white;
+  font-size: 18px;
+}
+
+.see-solution-btn:hover {
+  background-image: linear-gradient(purple, red, pink);
+  color: black;
+  opacity: .7;
+}
+
+.save-to-storage-btn:hover {
+  background-image: linear-gradient(purple, red, pink);
+  color: black;
+  opacity: .7;
+}
+
+/* .card-button {
+  height: 100px;
+  width: 180px;
+  border-radius: 50px;
+  background-image:url("https://wallpapercave.com/wp/gfwPusm.jpg");
+  color:white;
+  border:solid 4px white;
+  font-size: 18px;
+} */

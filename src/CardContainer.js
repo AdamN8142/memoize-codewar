@@ -17,9 +17,13 @@ class CardContainer extends Component {
             <p className="card-level">Level : {codeWar.level}</p>
           </div>
           <div className="link">
-            <a href={codeWar.replLink} target="_blank" className="repl-link">{codeWar.replLink}</a>
+            <a href={codeWar.replLink} target="_blank" className="repl-link">{codeWar.name} - REPL Link </a>
           </div>
           <h4 className="card-prompt">{codeWar.prompt}</h4>
+          <div className="card-buttons-container">
+            <button className="card-button" className="see-solution-btn">See the Solution</button>
+            <button className="card-button" className="save-to-storage-btn">Mark as Completed!</button>
+          </div>
         </article>
     })
     return filtered
