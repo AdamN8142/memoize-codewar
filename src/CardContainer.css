@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Molle:400i');
+
+
 .card-container {
   margin:0 auto;
   width: 800px;
@@ -6,8 +10,67 @@
 .individual-card {
   border:solid black;
   border-radius: 25px;
-  margin-bottom: 30px;
-  text-align: center;
-  height: 400px;
+  margin-bottom: 60px;
   width: 800px;
+  animation: slideInX 3.5s ease 0s 1 normal; 
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideInX {
+  0% {
+    transform: translateX(-400px);
+  }
+  100% {
+    transform: translateX(0px);
+  } 
+}
+
+.card-name {
+  font-size: 51px;
+  margin-top: 29px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+
+
+}
+
+.card-prompt {
+  font-size: 25px;
+  font-family: 'Indie Flower', cursive;
+  border:solid black 2px;
+  border-radius:25px;
+  margin-left: 35px;
+  margin-right: 35px;
+  padding: 25px;
+  margin-bottom: 50px;
+}
+
+.level-and-category {
+  display: flex;
+  justify-content: center;
+  font-family: 'Molle', cursive;
+}
+
+.card-category {
+  margin-right: 35px;
+  font-size: 25px;
+  font-family: 'Molle', cursive;
+}
+
+.card-level{
+  margin-left: 35px;
+  font-size: 25px;
+  margin-bottom:20px;
+}
+
+.repl-link {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+
 }

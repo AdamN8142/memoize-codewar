@@ -8,7 +8,7 @@ class Header extends Component {
   render() {
     return (
       <div>
-        <h1 className="title-header">The Great CodeWar Treaty</h1>
+        <h1 className="title-header">CodeWar Wins</h1>
       </div>
     )
   }
