@@ -1,19 +1,17 @@
 import React, { Component } from 'react';
-import Card from './Card'
+import CardContainer from './CardContainer';
 
-
-class CardContainer extends Component {
+class Card extends Component {
   constructor() {
     super();
   }
   render() {
     return (
       <div>
-        <Card />
+        
       </div>
     )
   }
 }
 
-
-export default CardContainer;
+export default Card;
