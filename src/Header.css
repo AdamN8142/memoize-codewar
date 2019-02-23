@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Coiny');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+
+
+
+.title-header {
+  font-size: 177px;
+  color: slategray;
+  font-weight: lighter;
+  text-align: center;
+  margin-bottom: 60px;
+  font-family: 'Space Mono', monospace;
+  text-shadow: 2px 2px #e76841;
+  animation: slideInY 1.0s ease 0s 1 normal; 
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideInY {
+  0% {
+    transform: translateY(-400px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+  
+
+}

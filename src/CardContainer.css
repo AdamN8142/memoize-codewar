@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Molle:400i');
+
+
+.card-container {
+  margin:0 auto;
+  width: 800px;
+  background-image:url("https://wallpapercave.com/wp/gfwPusm.jpg");
+
+}
+
+.individual-card {
+  border:solid black;
+  border-radius: 25px;
+  margin-bottom: 60px;
+  width: 800px;
+  animation: slideInX 3.5s ease 0s 1 normal; 
+  animation-fill-mode: forwards;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx_FVYfREyzYPsYobXZuXpXKIzu08n5owpMeno-LIjtyMcg8cG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: .85;
+}
+
+.individual-card:hover {
+  opacity: 1;
+}
+
+@keyframes slideInX {
+  0% {
+    transform: translateX(-400px);
+  }
+  100% {
+    transform: translateX(0px);
+  } 
+}
+
+.card-name {
+  font-size: 55px;
+  margin-top: 29px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+}
+
+.card-prompt {
+  font-size: 25px;
+  font-family: 'Indie Flower', cursive;
+  border:solid black 2px;
+  border-radius:25px;
+  margin-left: 35px;
+  margin-right: 35px;
+  padding: 25px;
+  margin-bottom: 50px;
+}
+
+.level-and-category {
+  display: flex;
+  justify-content: center;
+}
+
+.card-category {
+  margin-right: 35px;
+  font-size: 35px;
+  font-family: 'Indie Flower', cursive;
+}
+
+.card-level{
+  margin-left: 35px;
+  font-size: 35px;
+  margin-bottom:20px;
+  font-family: 'Indie Flower', cursive;
+
+}
+
+.repl-link {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+
+}
+
+.bottom-page {
+  background-image:url("https://wallpapercave.com/wp/gfwPusm.jpg");
+
+}
