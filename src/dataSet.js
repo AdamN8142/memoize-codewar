@@ -1,4 +1,5 @@
-const data = [
+
+const codeWars = [
   {
     "id": 1,
     "name": "Abbreviate a Two Word Name",
@@ -272,4 +273,7 @@ const data = [
 
 ]
 
-
+ 
+module.exports = {
+  codeWars
+}
