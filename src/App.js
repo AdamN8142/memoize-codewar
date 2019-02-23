@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import FilterControls from './FilterControls'
+import Header from './Header'
 import dataSet from './dataSet'
 import './App.css';
 
@@ -14,6 +15,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Header />
         <FilterControls  data={this.state.data}/>
         
 
