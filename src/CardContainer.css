@@ -1,0 +1,13 @@
+.card-container {
+  margin:0 auto;
+  width: 800px;
+}
+
+.individual-card {
+  border:solid black;
+  border-radius: 25px;
+  margin-bottom: 30px;
+  text-align: center;
+  height: 400px;
+  width: 800px;
+}
