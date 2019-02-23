@@ -23,7 +23,7 @@
 }
 
 .button:hover {
-  background-image: linear-gradient( red, pink);
+  background-image: linear-gradient(purple, red, pink);
   color: black;
 }
 
