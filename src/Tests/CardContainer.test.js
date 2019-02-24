@@ -37,10 +37,10 @@ describe("CardContainer", () => {
         "addedToStorage": false
       }
     ],
-    filteredCategories: jest.fn(),
-    filteredCompleted: jest.fn()
-    
-  }
+
+  filteredCategories: jest.fn(),
+  filteredCompleted: jest.fn() 
+}
   beforeEach(() => {
     wrapper = shallow(
       <CardContainer
