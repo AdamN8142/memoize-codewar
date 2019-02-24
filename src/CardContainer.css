@@ -27,14 +27,14 @@
   opacity: 1;
 } */
 
-@keyframes slideInX {
+/* @keyframes slideInX {
   0% {
     transform: translateX(-400px);
   }
   100% {
     transform: translateX(0px);
   } 
-}
+} */
 
 .card-name {
   font-size: 55px;
