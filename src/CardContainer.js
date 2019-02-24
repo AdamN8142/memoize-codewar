@@ -31,6 +31,4 @@ class CardContainer extends Component {
 }
 
 
-//add the object to local storage on click
-//map over array im saving to local storage 
 export default CardContainer;

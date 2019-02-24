@@ -26,7 +26,6 @@ class App extends Component {
       completed: updatedCompletedArr
     }, this.setLocalStorage)
   }
-
     setLocalStorage = () => {
       localStorage.setItem('completed', JSON.stringify(this.state.completed))
   }
@@ -52,7 +51,10 @@ class App extends Component {
     return (
       <div className="app">
         <Header />
-        <FilterControls  data={this.state.data} toggleComplete={this.toggleComplete} completed={this.state.completed}/>
+        <FilterControls 
+        data={this.state.data} 
+        toggleComplete={this.toggleComplete} 
+        completed={this.state.completed}/>
       </div>
     );
   }
