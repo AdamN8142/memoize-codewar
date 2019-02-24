@@ -29,15 +29,6 @@ class FilterControls extends Component {
       }, this.filteredCategories)
     }
   
-  // filterCompleted = () => {
-  //   let completedCodeWars = this.state.completed.map((codeWar) => {
-  //      codeWar.addedToStorage === true;
-  //   })  
-  //   return completedCodeWars 
-  // }
-
-
-
  
   render() {
     return (

@@ -4,6 +4,7 @@ import CardContainer from './CardContainer';
 class Card extends Component {
   constructor() {
     super();
+
   }
 
   toggleCompletedProperty = (event) => {

@@ -14,7 +14,7 @@ class App extends Component {
   }
 
   toggleComplete = (id) => {
-    let updatedData =this.state.data.map((card) => {
+    let updatedData = this.state.data.map((card) => {
       if(card.id === id) {
         card.addedToStorage = !card.addedToStorage;
       }
@@ -23,9 +23,14 @@ class App extends Component {
     let updatedCompletedArr = updatedData.filter( card => card.addedToStorage).map(card=> card.id)
     this.setState({
       data: updatedData, 
-      completed: updatedCompletedArr,
-    }, () => localStorage.setItem('completed', JSON.stringify(this.state.completed)))
+      completed: updatedCompletedArr
+    }, this.setLocalStorage)
   }
+
+    setLocalStorage = () => {
+      localStorage.setItem('completed', JSON.stringify(this.state.completed))
+  }
+    
 
   componentDidMount = () => {
     if(localStorage.getItem('completed')){
