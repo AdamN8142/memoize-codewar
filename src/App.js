@@ -8,7 +8,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      data: dataSet.codeWars,
+      data: [],
       completed: []
     }
   }
@@ -32,6 +32,17 @@ class App extends Component {
     
 
   componentDidMount = () => {
+    fetch("http://memoize-datasets.herokuapp.com/api/v1/ANdata")
+      .then(response => response.json())
+      .then(data => {
+        this.setState({
+          data: data.ANdata
+        })
+      })
+      .catch(error => {
+        throw new Error(error);
+      });
+
     if(localStorage.getItem('completed')){
       let storage = JSON.parse(localStorage.getItem('completed'))
       let updatedData =this.state.data.map((card) => {
