@@ -4,8 +4,11 @@
 
 
 .card-container {
-  margin:0 auto;
-  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 800px; */
   background-image:url("https://wallpapercave.com/wp/gfwPusm.jpg");
 
 }

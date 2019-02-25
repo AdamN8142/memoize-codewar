@@ -15,7 +15,9 @@ class Card extends Component {
   }
 
   toggleSolution = () => {
-
+    this.setState({
+      toggledSolution: !this.state.toggledSolution
+    })
   }
 
 
@@ -33,13 +35,12 @@ class Card extends Component {
           </div>
           <h4 className="card-prompt">{this.props.codeWar.prompt}</h4>
           <div className="card-buttons-container">
-            <button className="card-button" className="see-solution-btn"onClick={this.toggleSolution}>See the Solution</button>
+            {!this.state.toggledSolution && <button className="card-button" className="see-solution-btn"onClick={this.toggleSolution}>See the Solution</button>}
+            {this.state.toggledSolution && <button className="card-button" className="see-solution-btn"onClick={this.toggleSolution}>Hide the Solution</button>}
             {!this.props.codeWar.addedToStorage && <button className="card-button" className="save-to-storage-btn" onClick={this.toggleCompletedProperty}>Mark as Completed!</button>}
             {this.props.codeWar.addedToStorage && <button className="card-button" className="save-to-storage-btn" onClick={this.toggleCompletedProperty}>Remove from Completed!</button>}
           </div>
-          <a src={`../CodewarSolutions/${this.props.codeWar.id}.png`} target="_blank">
             <img className="solution-image" src={`../CodewarSolutions/${this.props.codeWar.id}.png`} /> 
-          </a>
         </article>
       </div>
     )
