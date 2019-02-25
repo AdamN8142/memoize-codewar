@@ -10,10 +10,10 @@
   align-items: center;
   /* width: 800px; */
   background-image:url("https://wallpapercave.com/wp/gfwPusm.jpg");
-
+  height: 100%;
 }
 
-.bottom-page {
-  background-image:url("https://wallpapercave.com/wp/gfwPusm.jpg");
-}
+/* .bottom-page {
+  /* background-image:url("https://wallpapercave.com/wp/gfwPusm.jpg"); */
+/* }  */
 
