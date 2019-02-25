@@ -1,14 +1,21 @@
 import React, { Component } from 'react';
 import CardContainer from './CardContainer';
+import './Card.css'
 
 class Card extends Component {
   constructor() {
     super();
-
+    this.state = {
+      toggledSolution : false
+    }
   }
 
   toggleCompletedProperty = (event) => {
     this.props.toggleComplete(this.props.codeWar.id)
+  }
+
+  toggleSolution = () => {
+
   }
 
 
@@ -26,11 +33,13 @@ class Card extends Component {
           </div>
           <h4 className="card-prompt">{this.props.codeWar.prompt}</h4>
           <div className="card-buttons-container">
-            <button className="card-button" className="see-solution-btn"onClick={this.toggleCard}>See the Solution</button>
+            <button className="card-button" className="see-solution-btn"onClick={this.toggleSolution}>See the Solution</button>
             {!this.props.codeWar.addedToStorage && <button className="card-button" className="save-to-storage-btn" onClick={this.toggleCompletedProperty}>Mark as Completed!</button>}
             {this.props.codeWar.addedToStorage && <button className="card-button" className="save-to-storage-btn" onClick={this.toggleCompletedProperty}>Remove from Completed!</button>}
-
           </div>
+          <a src={`../CodewarSolutions/${this.props.codeWar.id}.png`} target="_blank">
+            <img className="solution-image" src={`../CodewarSolutions/${this.props.codeWar.id}.png`} /> 
+          </a>
         </article>
       </div>
     )
@@ -38,3 +47,4 @@ class Card extends Component {
 }
 
 export default Card;
+
