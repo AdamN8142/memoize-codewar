@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import FilterControls from './FilterControls'
 import Header from './Header'
 import dataSet from './dataSet'
+import Splash from './Splash'
+
 import './App.css';
 
 class App extends Component {
@@ -9,7 +11,8 @@ class App extends Component {
     super();
     this.state = {
       data: [],
-      completed: []
+      completed: [],
+      pageStatus: 'splash'
     }
   }
 
@@ -58,18 +61,33 @@ class App extends Component {
     } 
   }
 
+  goToMainPage = () => {
+    this.setState({
+      pageStatus:'home'
+    })
+  }
+
 
 
   render() {
-    return (
-      <div className="app">
-        <Header />
-        <FilterControls 
-        data={this.state.data} 
-        toggleComplete={this.toggleComplete} 
-        completed={this.state.completed}/>
-      </div>
-    );
+    switch(this.state.pageStatus) {
+      case('home'):
+        return (
+          <div className="app">
+            <Header />
+            <FilterControls 
+              data={this.state.data} 
+              toggleComplete={this.toggleComplete} 
+              completed={this.state.completed}/>
+          </div>
+        );
+        default:
+        return (
+          <div>
+            <Splash goHome={this.goToMainPage} />
+          </div>
+      )
+    }
   }
 }
 
