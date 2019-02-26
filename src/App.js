@@ -11,8 +11,7 @@ class App extends Component {
     super();
     this.state = {
       data: [],
-      completed: [],
-      pageStatus: 'splash'
+      completed: []
     }
   }
 
@@ -29,23 +28,12 @@ class App extends Component {
       completed: updatedCompletedArr
     }, this.setLocalStorage)
   }
+
     setLocalStorage = () => {
       localStorage.setItem('completed', JSON.stringify(this.state.completed))
   }
-    
 
-  componentDidMount = () => {
-    fetch("http://memoize-datasets.herokuapp.com/api/v1/ANdata")
-      .then(response => response.json())
-      .then(data => {
-        this.setState({
-          data: data.ANdata
-        })
-      })
-      .catch(error => {
-        throw new Error(error);
-      });
-
+  getLocalStorage = () => {
     if(localStorage.getItem('completed')){
       let storage = JSON.parse(localStorage.getItem('completed'))
       let updatedData =this.state.data.map((card) => {
@@ -60,18 +48,24 @@ class App extends Component {
       })
     } 
   }
+    
 
-  goToMainPage = () => {
-    this.setState({
-      pageStatus:'home'
-    })
+  componentDidMount = () => {
+    fetch("http://memoize-datasets.herokuapp.com/api/v1/ANdata")
+      .then(response => response.json())
+      .then(data => {
+        this.setState({
+          data: data.ANdata
+        }, () => this.getLocalStorage())
+      })
+      .catch(error => {
+        throw new Error(error);
+      });
   }
 
 
 
   render() {
-    switch(this.state.pageStatus) {
-      case('home'):
         return (
           <div className="app">
             <Header />
@@ -80,15 +74,9 @@ class App extends Component {
               toggleComplete={this.toggleComplete} 
               completed={this.state.completed}/>
           </div>
-        );
-        default:
-        return (
-          <div>
-            <Splash goHome={this.goToMainPage} />
-          </div>
-      )
+        )
     }
-  }
 }
+
 
 export default App;
