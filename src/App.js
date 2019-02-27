@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import FilterControls from './FilterControls'
 import Header from './Header'
-import dataSet from './dataSet'
-import Splash from './Splash'
+
 
 import './App.css';
 

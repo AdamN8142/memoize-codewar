@@ -1,7 +1,6 @@
 import React from 'react';
 // import ReactDOM from 'react-dom';
 import App from '../App';
-import dataSet from '../dataSet'
 import { shallow } from "enzyme";
 
 describe("App", () => {
@@ -14,7 +13,7 @@ describe("App", () => {
   })
 
   it("should have the proper default state", () => {
-    expect(wrapper.state()).toEqual({data: dataSet.codeWars, completed:[]})
+    expect(wrapper.state()).toEqual({data: [], completed:[]})
   })
 
   it("should match the snapshot with all data passed in", () => {

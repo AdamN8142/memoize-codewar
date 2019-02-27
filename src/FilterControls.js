@@ -13,7 +13,6 @@ class FilterControls extends Component {
   }
 
   filteredCategories = () => {
-    console.log(this.props)
     let filteredCats = this.props.data.filter((codeWar) => {
       if (codeWar.level === this.state.chosenCategory && !codeWar.addedToStorage) {
         return codeWar
