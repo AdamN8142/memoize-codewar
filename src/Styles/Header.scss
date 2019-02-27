@@ -33,3 +33,18 @@
 .fas .fa-bolt {
   font-size: 20px
 }
+
+
+@media screen and (max-width:778px) {
+
+  .title-header {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width:385px) {
+
+  .title-header {
+    font-size: 50px;
+  }
+}
