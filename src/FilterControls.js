@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import CardContainer from './CardContainer';
 
 
-
 class FilterControls extends Component {
   constructor() {
     super();
@@ -29,7 +28,6 @@ class FilterControls extends Component {
       }, this.filteredCategories)
     }
   
- 
   render() {
     return (
       <div>

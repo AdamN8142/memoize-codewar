@@ -18,13 +18,11 @@
   opacity: .9;
 }
 
-
 .card-name {
   font-size: 55px;
   margin-top: 29px;
   margin-bottom: 25px;
   text-align: center;
-  /* font-family: 'Indie Flower', cursive; */
   font-family: 'Luckiest Guy', cursive;
   letter-spacing: .05em;
 }
@@ -109,8 +107,6 @@
   opacity: .7;
 }
 
-
-
 @media screen and (max-width:890px) {
   .individual-card {
     width: 500px;
@@ -131,14 +127,11 @@
     margin-left: 0px;
     font-size: 35px;
     margin-bottom:20px;
-   
   }
 
   .solution-image {
     width: 400px;
   }
-
- 
 }
 
 
