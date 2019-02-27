@@ -1,5 +1,4 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
 import App from '../App';
 import { shallow } from "enzyme";
 
@@ -26,7 +25,7 @@ describe("App", () => {
         "replLink": "https://repl.it/@codesForDays/Welcome-to-the-City?language=nodejs&folderId=",
         "addedToStorage": false
       },
-        {
+      {
         "id": 3,
         "name": "Remove Anchor from URL",
         "type": "String",

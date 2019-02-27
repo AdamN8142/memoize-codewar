@@ -46,7 +46,6 @@ class App extends Component {
     } 
   }
     
-
   componentDidMount = () => {
     fetch("http://memoize-datasets.herokuapp.com/api/v1/ANdata")
       .then(response => response.json())
@@ -59,8 +58,6 @@ class App extends Component {
         throw new Error(error);
       });
   }
-
-
 
   render() {
         return (
