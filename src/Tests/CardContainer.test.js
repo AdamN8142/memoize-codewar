@@ -81,4 +81,10 @@ describe("CardContainer", () => {
       expect(wrapper).toMatchSnapshot()
   })
 
+  it('should call showFilteredCategories',()=> {
+      const result = wrapper.instance().showFilteredCategories()
+      const expectation = 3
+      expect(result.length).toBe(3)
+  })
+
 })

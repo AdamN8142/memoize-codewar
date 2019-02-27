@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Molle:400i');
 
+$linearGrad: linear-gradient( red, orange,rgb(109, 109, 247), pink);
+
 .controls-container {
   width: 900px;
   display: flex;
@@ -15,7 +17,7 @@
   font-size: 28px;
   text-align: center;
   border-radius: 25px;
-  background-image: linear-gradient( red, orange,rgb(109, 109, 247), pink);
+  background-image: $linearGrad;
   color: white;
   font-weight: 800;
   font-family: 'Molle', cursive;
