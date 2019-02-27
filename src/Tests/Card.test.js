@@ -23,7 +23,8 @@ const mockProps = {
     level: "8 kyu",
     replLink: "https://repl.it/@codesForDays/Abbreviate-a-Two-Word-Name?language=nodejs&folderId=",
     addedToStorage: false,
-    },]
+    }
+  ]
 }
 
 describe('Card', () => {
@@ -46,4 +47,7 @@ describe('Card', () => {
     expect(wrapper.state()).toEqual({toggledSolution: true})
   })
 
+  
 })
+
+ 

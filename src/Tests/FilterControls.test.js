@@ -78,5 +78,25 @@ describe('FilterControls', () => {
      expect(wrapper).toMatchSnapshot()
    })
 
+   it("should set the state to 8kyu", () => {
+      expect(wrapper.state()).toEqual({chosenCategory: "", completed: []})
+      wrapper.find("#lvl-1-btn").first().simulate("click", { target: { value: "8 kyu"}})
+      expect(wrapper.state()).toEqual({chosenCategory: "8 kyu", completed: []})
+    })
+
+  it("should set the state to 8kyu", () => {
+      expect(wrapper.state()).toEqual({chosenCategory: "", completed: []})
+      wrapper.find("#lvl-2-btn").first().simulate("click", { target: { value: "7 kyu"}})
+      expect(wrapper.state()).toEqual({chosenCategory: "7 kyu", completed: []})
+    })
+
+  it("should set the state to 8kyu", () => {
+      expect(wrapper.state()).toEqual({chosenCategory: "", completed: []})
+      wrapper.find("#lvl-3-btn").first().simulate("click", { target: { value: "6 kyu"}})
+      expect(wrapper.state()).toEqual({chosenCategory: "6 kyu", completed: []})
+    })  
+
+    
+
 
 })
