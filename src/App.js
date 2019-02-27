@@ -3,8 +3,6 @@ import FilterControls from './FilterControls'
 import Header from './Header'
 
 
-import './App.css';
-
 class App extends Component {
   constructor() {
     super();
@@ -16,7 +14,7 @@ class App extends Component {
 
   toggleComplete = (id) => {
     let updatedData = this.state.data.map((card) => {
-      if(card.id === id) {
+      if (card.id === id) {
         card.addedToStorage = !card.addedToStorage;
       }
         return card
