@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import CardContainer from './CardContainer';
-import './FilterControls.css';
+
 
 
 class FilterControls extends Component {

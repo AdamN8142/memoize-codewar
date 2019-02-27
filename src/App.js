@@ -3,8 +3,6 @@ import FilterControls from './FilterControls'
 import Header from './Header'
 
 
-import './App.css';
-
 class App extends Component {
   constructor() {
     super();
