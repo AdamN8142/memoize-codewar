@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should match the snapshot will all data passed in 1`] = `
+<div>
+  <article
+    className="individual-card"
+  >
+    <h3
+      className="card-name"
+    >
+      Abbreviate a Two Word Name
+    </h3>
+    <div
+      className="level-and-category"
+    >
+      <p
+        className="card-category"
+      >
+        Category : 
+        String
+      </p>
+      <p
+        className="card-level"
+      >
+        Level : 
+        8 kyu
+      </p>
+    </div>
+    <div
+      className="link"
+    >
+      <a
+        className="repl-link"
+        href="https://repl.it/@codesForDays/Abbreviate-a-Two-Word-Name?language=nodejs&folderId="
+        target="_blank"
+      >
+        Abbreviate a Two Word Name
+         - REPL Link 
+      </a>
+    </div>
+    <h4
+      className="card-prompt"
+    >
+      Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
+    </h4>
+    <div
+      className="card-buttons-container"
+    >
+      <button
+        className="save-to-storage-btn"
+        onClick={[Function]}
+      >
+        Mark as Completed!
+      </button>
+      <button
+        className="see-solution-btn"
+        onClick={[Function]}
+      >
+        See Solution
+      </button>
+    </div>
+  </article>
+</div>
+`;

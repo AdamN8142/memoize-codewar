@@ -6,9 +6,6 @@ import './CardContainer.css'
 class CardContainer extends Component {
   constructor() {
     super();
-    this.state =({
-      
-    })
   }
 
   showFilteredCategories = () => {

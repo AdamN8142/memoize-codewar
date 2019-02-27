@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import FilterControls from './FilterControls'
 import Header from './Header'
-import dataSet from './dataSet'
+
+
 import './App.css';
 
 class App extends Component {
@@ -26,23 +27,12 @@ class App extends Component {
       completed: updatedCompletedArr
     }, this.setLocalStorage)
   }
+
     setLocalStorage = () => {
       localStorage.setItem('completed', JSON.stringify(this.state.completed))
   }
-    
 
-  componentDidMount = () => {
-    fetch("http://memoize-datasets.herokuapp.com/api/v1/ANdata")
-      .then(response => response.json())
-      .then(data => {
-        this.setState({
-          data: data.ANdata
-        })
-      })
-      .catch(error => {
-        throw new Error(error);
-      });
-
+  getLocalStorage = () => {
     if(localStorage.getItem('completed')){
       let storage = JSON.parse(localStorage.getItem('completed'))
       let updatedData =this.state.data.map((card) => {
@@ -57,20 +47,35 @@ class App extends Component {
       })
     } 
   }
+    
+
+  componentDidMount = () => {
+    fetch("http://memoize-datasets.herokuapp.com/api/v1/ANdata")
+      .then(response => response.json())
+      .then(data => {
+        this.setState({
+          data: data.ANdata
+        }, () => this.getLocalStorage())
+      })
+      .catch(error => {
+        throw new Error(error);
+      });
+  }
 
 
 
   render() {
-    return (
-      <div className="app">
-        <Header />
-        <FilterControls 
-        data={this.state.data} 
-        toggleComplete={this.toggleComplete} 
-        completed={this.state.completed}/>
-      </div>
-    );
-  }
+        return (
+          <div className="app">
+            <Header />
+            <FilterControls 
+              data={this.state.data} 
+              toggleComplete={this.toggleComplete} 
+              completed={this.state.completed}/>
+          </div>
+        )
+    }
 }
+
 
 export default App;
