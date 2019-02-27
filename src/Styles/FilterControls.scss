@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Molle:400i');
 
-$linearGrad: linear-gradient( red, orange,rgb(109, 109, 247), pink);
+$linearGrad: linear-gradient(rgb(109, 109, 247), pink);
 
 .controls-container {
   width: 900px;
@@ -24,7 +24,7 @@ $linearGrad: linear-gradient( red, orange,rgb(109, 109, 247), pink);
 }
 
 .button:hover {
-  background-image: linear-gradient(purple, red, pink);
+  background-image: linear-gradient(#00abac, #f4409a);
   color: black;
 }
 
