@@ -18,6 +18,9 @@ Once the server is running, open http://localhost:3000 to view it in the browser
 
 ### Codwar Combat features three levels of CodeWars, ranging from easiest to hardest. When you enter the site, choose the level you would like to work on (level one for begginers!). As a user, you will be given a category and kyu level, as well as a brief description of the CodeWar. The link on each card will open up a REPL with the CodeWar challenge already set up for you. On the CC app, you will be given the option to see the solution, but it's best to try them first! Once you have completed the CodeWar, you can then mark the CodeWar as completed and it will persist in local storage. The goal is to finish all of the CodeWars! Best of luck! 
 
+## RESPONSIVENESS
+
+### The site is fully responsive and designed to accommodate both mobile devices and tablets.
 
 
 
