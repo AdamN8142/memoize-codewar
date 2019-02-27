@@ -27,7 +27,6 @@
   /* font-family: 'Indie Flower', cursive; */
   font-family: 'Luckiest Guy', cursive;
   letter-spacing: .05em;
-
 }
 
 .card-prompt {
@@ -57,7 +56,6 @@
   font-size: 45px;
   margin-bottom:20px;
   font-family: 'Indie Flower', cursive;
-
 }
 
 .repl-link {
@@ -111,12 +109,57 @@
   opacity: .7;
 }
 
-/* .card-button {
-  height: 100px;
-  width: 180px;
-  border-radius: 50px;
-  background-image:url("https://wallpapercave.com/wp/gfwPusm.jpg");
-  color:white;
-  border:solid 4px white;
-  font-size: 18px;
-} */
+
+
+@media screen and (max-width:890px) {
+  .individual-card {
+    width: 500px;
+  }
+
+  .level-and-category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-category {
+    margin-right: 0px;
+    font-size: 35px;
+  }
+  
+  .card-level{
+    margin-left: 0px;
+    font-size: 35px;
+    margin-bottom:20px;
+   
+  }
+
+ 
+}
+
+
+@media screen and (max-width:550px) {
+  .individual-card {
+    width: 300px;
+  }
+
+  .card-buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items:center; 
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+
+  .save-to-storage-btn {
+    margin-bottom: 20px;
+  }
+
+  .card-category {
+    text-align: center;
+  }
+  .card-name {
+    font-size: 30px;
+  }
+  
+}
